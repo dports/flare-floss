@@ -1,8 +1,10 @@
 name: build
 
 on:
+  push:
+    branches: [ "master" ]
   pull_request:
-    branches: [ master ]
+    branches: [ "master" ]
   release:
     types: [edited, published]
 
